@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Background vid -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="background.mp4" type="video/mp4">
+            <!-- Add additional source elements for different video formats -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-form">
+        <div class="items"></div>
+            <embed src="icons8-nasa.svg" type="image/svg+xml" id="logo">
+            <h2>Login</h2>
+            <form action="#" method="get">
+                <!-- Email -->
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" pattern="^[\w-]+(\.[\w-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,})$" required>
+                </div>
+
+                <br>
+
+                <!-- Password -->
+                <div class="pass">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must be at least 8 characters long and include at least one letter and one number" required>
+                </div>
+            
+                <br>
+
+                <!-- Submit -->
+                <button type="submit" id="login">Login</button>
+                
+                <br>
+
+                <p class="toSignUp">If you dont have an account already <a href="signUp.html">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <span style="color: white;">
+            <p>AI Video from <a href="https://mixkit.co" target="_blank" style="color: white;">Mixkit.co</a></p>
+        </span>
+    </footer>
+</body>
+</html>
